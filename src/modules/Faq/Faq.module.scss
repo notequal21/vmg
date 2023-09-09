@@ -1,0 +1,25 @@
+.faq {
+  margin: 85px 0 0;
+
+  .con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &Body {
+    margin: 32px 0 0;
+
+    @media (max-width: 767px) {
+      margin: 20px 0 0;
+    }
+  }
+
+  &__btn {
+    margin: 32px 0 0;
+
+    @media (max-width: 767px) {
+      margin: 20px 0 0;
+    }
+  }
+}

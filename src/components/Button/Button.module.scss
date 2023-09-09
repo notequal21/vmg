@@ -1,0 +1,91 @@
+.button {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 14px 30px;
+  overflow: hidden;
+
+  border-radius: 16px;
+  background: transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 20px 0px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+
+  transition: all 0.3s ease;
+
+  @media (max-width: 991px) {
+    padding: 8.5px 27px;
+    font-size: 16px;
+    border-radius: 7.155px;
+  }
+
+  &::before {
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1px;
+    border-radius: 16px;
+    pointer-events: none;
+
+    background: linear-gradient(-180deg, #e8cca3 0, #765a32 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    @media (max-width: 991px) {
+      border-radius: 7.155px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    background: radial-gradient(
+        2771.11% 234.85% at -2.5% 131.9%,
+        rgba(7, 60, 249, 0.2) 0%,
+        rgba(7, 60, 249, 0) 100%
+      ),
+      radial-gradient(
+        2029.04% 175.41% at 103.82% 27.59%,
+        rgba(181, 70, 233, 0.2) 0%,
+        rgba(181, 70, 233, 0) 100%
+      ),
+      rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+  }
+
+  &:hover {
+    background: #000;
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  img {
+    margin: 0 14px 0 0;
+  }
+}
