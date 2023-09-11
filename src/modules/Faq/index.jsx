@@ -23,7 +23,13 @@ const FaqSection = () => {
           </div>
         </Fade>
         <Fade bottom>
-          <Button className={style.faq__btn} title='Become An Affiliate' />
+          <Button
+            target='_blank'
+            rel='noreferrer'
+            href='https://portal.vymediagroup.com/affiliate/signup'
+            className={style.faq__btn}
+            title='Become An Affiliate'
+          />
         </Fade>
       </div>
     </section>

@@ -27,7 +27,7 @@ const AffilatesSection = () => {
 
       <div className={`${style.con} container`}>
         <SectionTitle className={style.affilates__title}>
-          <Fade bottom>Affilates</Fade>
+          <Fade bottom>Affiliates</Fade>
         </SectionTitle>
         <Fade>
           <div className={style.affilatesBody}>
@@ -44,6 +44,9 @@ const AffilatesSection = () => {
         </Fade>
         <Fade bottom>
           <Button
+            target='_blank'
+            rel='noreferrer'
+            href='https://portal.vymediagroup.com/affiliate/signup'
             className={style.affilates__btn}
             title={'Sign Up As An Affiliate Today'}
           />

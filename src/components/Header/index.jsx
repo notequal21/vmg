@@ -41,6 +41,24 @@ const Header = () => {
                     isBurgerOpen ? style.open : ''
                   }`}
                 >
+                  <a
+                    target='_blank'
+                    rel='noreferrer'
+                    href='https://portal.vymediagroup.com/login'
+                    className={style.headerBody__btn}
+                  >
+                    {loginSvg}
+                    Log In
+                  </a>
+                  <a
+                    target='_blank'
+                    rel='noreferrer'
+                    href='https://portal.vymediagroup.com/affiliate/signup'
+                    className={style.headerBody__btn}
+                  >
+                    {signupSvg}
+                    Sign Up
+                  </a>
                   {HeaderLinks.map((item, index) => (
                     <div
                       onClick={() => toSection(item.to)}
@@ -50,14 +68,6 @@ const Header = () => {
                       {item.name}
                     </div>
                   ))}
-                  <a href='' className={style.headerBody__btn}>
-                    {signupSvg}
-                    Sign Up
-                  </a>
-                  <a href='' className={style.headerBody__btn}>
-                    {loginSvg}
-                    Log In
-                  </a>
                 </div>
               </div>
             </>
@@ -75,11 +85,21 @@ const Header = () => {
                 ))}
               </div>
               <div className={style.headerBody__btns}>
-                <a href='' className={style.headerBody__btnsItem}>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://portal.vymediagroup.com/affiliate/signup'
+                  className={style.headerBody__btnsItem}
+                >
                   {signupSvg}
                   Sign Up
                 </a>
-                <a href='' className={style.headerBody__btnsItem}>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://portal.vymediagroup.com/login'
+                  className={style.headerBody__btnsItem}
+                >
                   {loginSvg}
                   Log In
                 </a>

@@ -1,15 +1,15 @@
 export const HeaderLinks = [
   {
-    name: 'About VMG',
-    to: '#about',
-  },
-  {
     name: 'Affiliates',
     to: '#affiliates',
   },
   {
     name: 'Advertisers',
     to: '#advertisers',
+  },
+  {
+    name: 'About VMG',
+    to: '#about',
   },
   {
     name: 'FAQ',

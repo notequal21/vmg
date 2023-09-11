@@ -164,6 +164,18 @@
         &:not(:first-child) {
           margin: 20px 0 0;
         }
+
+        @media (max-width: 991px) {
+          &:nth-child(5) {
+            order: 6;
+          }
+          &:nth-child(6) {
+            order: 5;
+          }
+          &:nth-child(7) {
+            order: 7;
+          }
+        }
       }
     }
     &__btn {

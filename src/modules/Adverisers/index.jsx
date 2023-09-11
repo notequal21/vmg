@@ -25,6 +25,9 @@ const AdverisersSection = () => {
         </div>
         <Fade bottom>
           <Button
+            target='_blank'
+            rel='noreferrer'
+            href='https://portal.vymediagroup.com/advertiser/signup'
             className={style.adverisers__btn}
             title={'Sign Up As An Adverstiser Today'}
           />

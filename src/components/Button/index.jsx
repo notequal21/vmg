@@ -1,7 +1,15 @@
 import { useEffect, useState } from 'react';
 import style from './Button.module.scss';
 
-const Button = ({ isMail, onClick, className, href, title, children }) => {
+const Button = ({
+  isMail,
+  onClick,
+  className,
+  href,
+  title,
+  children,
+  ...props
+}) => {
   const [mail, setMail] = useState('');
 
   useEffect(() => {
@@ -18,7 +26,8 @@ const Button = ({ isMail, onClick, className, href, title, children }) => {
   if (href) {
     return (
       <a
-        href={`${isMail && 'mailto:'}${mail}`}
+        {...props}
+        href={isMail ? `mailto:${mail}` : href}
         onClick={onClick}
         className={`${style.button} ${className}`}
       >

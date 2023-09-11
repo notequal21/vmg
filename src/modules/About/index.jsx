@@ -17,7 +17,9 @@ const AboutSection = () => {
         <div className={style.aboutBody}>
           <SectionTitle className={style.aboutBody__title}>
             <Fade bottom>
-              About <i>VMG</i>
+              About{' '}
+              <span style={{ opacity: '0', visibility: 'hidden' }}>"</span>{' '}
+              <i>VMG</i>
             </Fade>
           </SectionTitle>
           <div className={style.aboutBody__text}>
